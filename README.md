@@ -3,7 +3,7 @@
 Welcome to my coding portfolio! This web application is built using **React.js** with **Sass** styling, showcasing my skills, projects, and achievements in the field of web development.
 You can check it out [here!](https://your-portfolio-link.com) <!-- Replace with your real link -->
 
-![Screenshot](<img width="1931" height="923" alt="Screenshot (228)" src="https://github.com/user-attachments/assets/179371b8-6b59-4191-a9a7-28134445dc74" />
+![Screenshot](<https://github.com/Abdi235/personalporfolio/blob/main/Screenshot%20(228).png>
 ) 
 
 ---
