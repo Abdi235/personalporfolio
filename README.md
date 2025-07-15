@@ -1,66 +1,98 @@
-# Erik Cupsa's Coding Portfolio
+# Mohamed Abdi's Coding Portfolio
 
-Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://erikc-portfolio.vercel.app/)
+Welcome to my coding portfolio! This web application is built using **React.js** with **Sass** styling, showcasing my skills, projects, and achievements in the field of web development.
+You can check it out [here!](https://your-portfolio-link.com) <!-- Replace with your real link -->
 
-<img width="1160" alt="Screenshot 2024-06-15 at 1 20 54 AM" src="https://github.com/Erik-Cupsa/PortfolioWebsite/assets/86483911/3158d670-8cea-428a-8308-32c6b50f4de0">
+![Screenshot](<img width="1931" height="923" alt="Screenshot (228)" src="https://github.com/user-attachments/assets/179371b8-6b59-4191-a9a7-28134445dc74" />
+) 
 
-
-
+---
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+* [Introduction](#introduction)
+* [Features](#features)
+* [Installation](#installation)
+* [Technologies Used](#technologies-used)
+* [Project Structure](#project-structure)
+* [Contributing](#contributing)
+* [License](#license)
+
+---
 
 ## Introduction
 
-This portfolio is a personalized space for me to highlight my expertise, share my projects, and provide information about my coding journey. The application offers an interactive and user-friendly experience for visitors to explore my work and get in touch with me.
+This portfolio is a personalized space where I highlight my expertise, share my projects, and tell my story as a developer. The site offers an interactive and user-friendly experience for visitors to explore my work and contact me directly.
+
+---
 
 ## Features
 
-- **Responsive Design:** The portfolio is designed to be accessible and visually appealing across various devices and screen sizes.
+* ✨ **Responsive Design**: Optimized for all screen sizes.
+* 📁 **Project Showcase**: Displays detailed project info, tech used, and live demos.
+* 💡 **Skills Section**: Highlights my tech stack and tools.
+* 📬 **Contact Form**: Visitors can message me directly through the site.
 
-- **Project Showcase:** I can display his coding projects with detailed information, including technologies used, project descriptions, and live demo links.
-
-- **Skills Section:** A dedicated section to showcase my skills and proficiency in different programming languages, frameworks, and tools.
-
-- **Contact Form:** An interactive contact form allowing visitors to reach out to me directly.
+---
 
 ## Installation
 
-To run this portfolio locally, follow these steps:
+To run this portfolio locally:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git](https://github.com/Erik-Cupsa/PortfolioWebsite.git`
+1. **Clone the repository:**
 
-2. Navigate to the project directory: `cd PortfolioWebsite`
+   ```bash
+   git clone https://github.com/mohamedabdi/portfolio.git
+   ```
 
-3. Install dependencies: `npm install`
+2. **Navigate to the project directory:**
 
-4. Start the development server: `npm start`
+   ```bash
+   cd portfolio
+   ```
 
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000)
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   npm start
+   ```
+
+5. **Visit** [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
 
 ## Technologies Used
 
-- ReactJs: A JavaScript library for building user interfaces.
-- Sass: A CSS preprocessor that enhances the styling capabilities of the application.
+* **React.js** – Frontend framework for building UI
+* **Sass** – CSS preprocessor for better styling structure
+* **EmailJS** – For sending messages via contact form
+
+---
 
 ## Project Structure
 
-The project structure follows a standard React application layout. Key directories include:
+```bash
+├── public/                # Static assets
+├── src/
+│   ├── components/        # Reusable React components
+│   ├── styles/            # Sass files
+│   └── App.js             # Main app file
+└── index.js           # App entry point
+```
 
-- `src/components`: Contains React components used to build different sections of the portfolio.
-- `src/styles`: Sass files for styling the application.
-- `public`: Static assets and the `index.html` file.
+---
 
 ## Contributing
 
-If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
+Contributions are welcome! Please [open an issue](https://github.com/mohamedabdi/portfolio/issues) or submit a pull request.
+
+---
 
 ## License
 
@@ -68,4 +100,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for checking out my Coding Portfolio! If you have any questions or feedback, feel free to reach out.
+### 🙏 Thank You
+
+Thank you for visiting my portfolio! Feel free to reach out with any questions or collaboration ideas.
