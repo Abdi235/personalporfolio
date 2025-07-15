@@ -21,23 +21,47 @@ const Contact = () => {
         };
       }, []);
 
-     const sendEmail = (e) => {
-  e.preventDefault()
+      const sendEmail = (e) => {
+        e.preventDefault() 
 
-  emailjs.sendForm(
-    process.env.REACT_APP_EMAILJS_SERVICE_ID,
-    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-    refForm.current,
-    process.env.REACT_APP_EMAILJS_USER_ID  // use env variable here too
-  )
-  .then(() => {
-    alert("Message successfully sent! I will get back to you within 1 to 2 business days.")
-    window.location.reload(false)
-  }, () => {
-    alert("Failed to send the message, please try again")
-  })
-}
+        // Debug: Check if environment variables are loaded
+        console.log('Environment variables:', {
+            serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        });
 
+        // Check if all required variables are present
+        if (!process.env.REACT_APP_EMAILJS_SERVICE_ID || 
+            !process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 
+            !process.env.REACT_APP_EMAILJS_PUBLIC_KEY) {
+            alert('EmailJS configuration is missing. Please check your .env file.');
+            return;
+        }
+
+        console.log('Attempting to send email...');
+
+        emailjs
+            .sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                refForm.current,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    console.log('Email sent successfully:', result);
+                    alert("Message successfully sent! I will get back to you within 1 to 2 business days.")
+                    window.location.reload(false)
+                }, 
+                (error) => { 
+                    console.error('EmailJS Error Details:', error);
+                    console.error('Error status:', error.status);
+                    console.error('Error text:', error.text);
+                    alert(`Failed to send the message: ${error.text || error.message || 'Unknown error'}. Please try again.`)
+                }
+            )
+      }
 
     return(
         <>
@@ -57,16 +81,16 @@ const Contact = () => {
                                     <br/>
                                     <br/>
                                     <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/mohamed-abdi-84b18518a/">
-                                        <FontAwesomeIcon icon={faLinkedin}  class = "icon" color = "#4d4d4e" />
+                                        <FontAwesomeIcon icon={faLinkedin}  className = "icon" color = "#4d4d4e" />
                                     </a>
                                     <a target = "_blank" rel = "noreferrer" href = "mailto:mohamedabdi.tech@gmail.com">
-                                        <FontAwesomeIcon icon={faEnvelope} class = "icon" color = "#4d4d4e" />
+                                        <FontAwesomeIcon icon={faEnvelope} className = "icon" color = "#4d4d4e" />
                                     </a>
                                 </p>
                             </td>
                             <td className="right-side">
-                                <div className="contact-form" onSubmit={sendEmail}>
-                                    <form ref={refForm}>
+                                <div className="contact-form">
+                                    <form ref={refForm} onSubmit={sendEmail}>  {/* MOVED: onSubmit to form element */}
                                         <ul>
                                             <li className = "half">
                                                 <input type="text" name="name" placeholder="Name" required />
