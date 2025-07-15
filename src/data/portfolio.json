@@ -1,0 +1,42 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/flappybird.jpg", 
+            "title": "FlappyBird", 
+            "description": "HTML, CSS, JavaScript", 
+            "url": "https://flappy-bird-five-chi.vercel.app/"
+        },
+        {
+            "cover": "/portfolio/spaceinverss.jpg", 
+            "title": "Space Invaders", 
+            "description": "HTML, CSS, JavaScript", 
+            "url": "https://ultimatespaceinader.netlify.app/"
+        },
+        {
+            "cover": "/portfolio/PLPredictor.png", 
+            "title": "PL Match Predictor", 
+            "description": "Python, Sci-kit Learn, Pandas", 
+            "url": "https://github.com/Abdi235/EPL-match"
+        },
+        {
+            "cover": "/portfolio/FPL.png", 
+            "title": "EPL-ZONE", 
+            "description": "ReactJS, PostgreSQL, Spring Boot", 
+            "url": "https://epl-fhq4.vercel.app/"
+        },
+        {
+            "cover": "/portfolio/halloffame.jpg", 
+            "title": "Hall-Of-Fame-Oracle", 
+            "description": "ReactJS, NodeJS, Web Sockets,Python,ML(pandas, scikit-learn)", 
+            "url": "https://github.com/Abdi235/Hallofameoracle"
+        },
+        {
+            "cover": "/portfolio/pacman.png", 
+            "title": "Pacman", 
+            "description": "HTML, CSS, JavaScript", 
+            "url": "https://pacman-orpin.vercel.app/"
+        }
+
+        
+    ]
+}
